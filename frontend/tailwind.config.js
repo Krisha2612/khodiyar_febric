@@ -1,0 +1,86 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f5f8fa',
+          100: '#e0ebf2',
+          200: '#c2d8e5',
+          300: '#9bbfd3',
+          400: '#6fa1bc',
+          500: '#4e85a4',
+          600: '#3d6b8a',
+          700: '#355573',
+          800: '#2f4759',
+          900: '#2a3d4c',
+          950: '#1a2630',
+        },
+        secondary: {
+          50: '#fafaec',
+          100: '#f5f5cf',
+          200: '#eeeda5',
+          300: '#e3de73',
+          400: '#d8ce4a',
+          500: '#c9b828',
+          600: '#b19a1f',
+          700: '#936e1c',
+          800: '#78591e',
+          900: '#654a1d',
+          950: '#3a280d',
+        },
+        accent: {
+          50: '#fef3ee',
+          100: '#fde6d9',
+          200: '#fbcab2',
+          300: '#f8a982',
+          400: '#f48150',
+          500: '#f25f2a',
+          600: '#e54016',
+          700: '#be3011',
+          800: '#982813',
+          900: '#7b2514',
+          950: '#420f07',
+        },
+        neutral: {
+          50: '#f8f9fa',
+          100: '#f1f3f5',
+          200: '#e9ecef',
+          300: '#dee2e6',
+          400: '#ced4da',
+          500: '#adb5bd',
+          600: '#6c757d',
+          700: '#495057',
+          800: '#343a40',
+          900: '#212529',
+          950: '#0f1112',
+        },
+      },
+      fontFamily: {
+        'heading': ['Cormorant Garamond', 'serif'],
+        'sans': ['Inter', 'sans-serif'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'slide-down': 'slideDown 0.3s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
